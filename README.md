@@ -21,3 +21,19 @@ docker-compose stop
 ```
 docker-compose down
 ```
+
+npm install prisma --save-dev
+npx prisma init
+
+# To actually create the tables in your database, you now can use
+npx prisma db push
+
+npx prisma studio
+
+# install-and-generate-prisma-client
+npm install @prisma/client
+
+ - Because Prisma Client is tailored to your own schema, you need to update it every time your Prisma schema file is changing by running the following command:
+ 
+npx prisma generate
+
